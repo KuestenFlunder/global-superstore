@@ -1,4 +1,4 @@
-package com.ltp.globalsuperstore;
+package com.ltp.globalsuperstore.controller;
 
 import javax.validation.Valid;
 
@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.ltp.globalsuperstore.Item;
+import com.ltp.globalsuperstore.service.StoreService;
 
 @Controller
 public class StoreController {
