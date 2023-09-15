@@ -39,6 +39,12 @@ To get started with the application, follow these steps:
 ### 3. **Accessing the Application**
    - Once active, the application can be accessed at `http://localhost:8080`.
 
+## Features
+
+   - **Item CRUD Operations**: The application supports creating, reading, and updating items in the inventory.
+   - **Data Validation**: The Item entity class has validation annotations to ensure the data integrity of the application.
+   - **ID Generation**: Every new item gets a unique ID generated using UUID.
+
 ## Acknowledgments
 
 This project signifies the culmination of a structured Spring Boot course, integrating the fundamentals of Spring Framework into a cohesive and functional application. The utilization of Thymeleaf for frontend development, while not aligning with contemporary code design paradigms, serves as a convenient platform for learning and consolidating knowledge on Spring Boot functionalities.
