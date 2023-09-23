@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ltp.globalsuperstore.Constants;
@@ -13,13 +14,9 @@ import com.ltp.globalsuperstore.repository.StoreRepository;
 @Service
 public class StoreService {
 
-
+    @Autowired
     StoreRepository storeRepository;
     
-    
-    public StoreService(StoreRepository storeRepository) {
-        this.storeRepository = storeRepository;
-    }
     
     public Item getItem(int index) {
         return storeRepository.getItem(index);
@@ -37,7 +34,7 @@ public class StoreService {
         return storeRepository.getItems();
     }
 
-    public Item getItemfromId(String id) {
+    public Item getItemFromId(String id) {
         int index = getIndexFromId(id);
         return index == Constants.NOT_FOUND ? new Item() : getItem(index);
     }
