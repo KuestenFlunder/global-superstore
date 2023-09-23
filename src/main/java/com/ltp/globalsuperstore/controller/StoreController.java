@@ -25,7 +25,7 @@ public class StoreController {
 
     @GetMapping("/form")
     public String getForm(Model model, @RequestParam(required = false) String id) {
-        model.addAttribute("item", storeService.getItemfromId(id));
+        model.addAttribute("item", storeService.getItemFromId(id));
         return "form";
     }
 
